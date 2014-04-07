@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C34A25618EE970C0050D735 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C34A25518EE970C0050D735 /* Foundation.framework */; };
+		2C34A25818EE970C0050D735 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C34A25718EE970C0050D735 /* CoreGraphics.framework */; };
+		2C34A25A18EE970C0050D735 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C34A25918EE970C0050D735 /* UIKit.framework */; };
+		2C34A26018EE970C0050D735 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C34A25E18EE970C0050D735 /* InfoPlist.strings */; };
+		2C34A26218EE970C0050D735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A26118EE970C0050D735 /* main.m */; };
+		2C34A26618EE970C0050D735 /* TWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A26518EE970C0050D735 /* TWAppDelegate.m */; };
+		2C34A26918EE970C0050D735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C34A26718EE970C0050D735 /* Main.storyboard */; };
+		2C34A26C18EE970C0050D735 /* TWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A26B18EE970C0050D735 /* TWViewController.m */; };
+		2C34A26E18EE970C0050D735 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C34A26D18EE970C0050D735 /* Images.xcassets */; };
+		2C34A27518EE970C0050D735 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C34A27418EE970C0050D735 /* XCTest.framework */; };
+		2C34A27618EE970C0050D735 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C34A25518EE970C0050D735 /* Foundation.framework */; };
+		2C34A27718EE970C0050D735 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C34A25918EE970C0050D735 /* UIKit.framework */; };
+		2C34A27F18EE970C0050D735 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C34A27D18EE970C0050D735 /* InfoPlist.strings */; };
+		2C34A28118EE970C0050D735 /* TrafficWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A28018EE970C0050D735 /* TrafficWatchTests.m */; };
+		2C34A28C18EE9BFE0050D735 /* TWIncident.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A28B18EE9BFE0050D735 /* TWIncident.m */; };
+		2C34A28F18EEA7490050D735 /* TWIncidentsParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A28E18EEA7490050D735 /* TWIncidentsParseOperation.m */; };
+		2C34A29318EED5F00050D735 /* TWIncidentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A29218EED5F00050D735 /* TWIncidentCell.m */; };
+		2C751D4418F2125C00B00C41 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C751D4318F2125C00B00C41 /* placeholder.png */; };
+		2CA36F4F18F0DE72000630FC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA36F4E18F0DE72000630FC /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C34A27818EE970C0050D735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C34A24A18EE970C0050D735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C34A25118EE970C0050D735;
+			remoteInfo = TrafficWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C34A25218EE970C0050D735 /* TrafficWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C34A25518EE970C0050D735 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C34A25718EE970C0050D735 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C34A25918EE970C0050D735 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C34A25D18EE970C0050D735 /* TrafficWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficWatch-Info.plist"; sourceTree = "<group>"; };
+		2C34A25F18EE970C0050D735 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C34A26118EE970C0050D735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C34A26318EE970C0050D735 /* TrafficWatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrafficWatch-Prefix.pch"; sourceTree = "<group>"; };
+		2C34A26418EE970C0050D735 /* TWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWAppDelegate.h; sourceTree = "<group>"; };
+		2C34A26518EE970C0050D735 /* TWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAppDelegate.m; sourceTree = "<group>"; };
+		2C34A26818EE970C0050D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C34A26A18EE970C0050D735 /* TWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWViewController.h; sourceTree = "<group>"; };
+		2C34A26B18EE970C0050D735 /* TWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWViewController.m; sourceTree = "<group>"; };
+		2C34A26D18EE970C0050D735 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C34A27318EE970C0050D735 /* TrafficWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C34A27418EE970C0050D735 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2C34A27C18EE970C0050D735 /* TrafficWatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficWatchTests-Info.plist"; sourceTree = "<group>"; };
+		2C34A27E18EE970C0050D735 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C34A28018EE970C0050D735 /* TrafficWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficWatchTests.m; sourceTree = "<group>"; };
+		2C34A28A18EE9BFE0050D735 /* TWIncident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncident.h; sourceTree = "<group>"; };
+		2C34A28B18EE9BFE0050D735 /* TWIncident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncident.m; sourceTree = "<group>"; };
+		2C34A28D18EEA7490050D735 /* TWIncidentsParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncidentsParseOperation.h; sourceTree = "<group>"; };
+		2C34A28E18EEA7490050D735 /* TWIncidentsParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncidentsParseOperation.m; sourceTree = "<group>"; };
+		2C34A29018EEBFB70050D735 /* TWIncidentsParserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWIncidentsParserDelegate.h; sourceTree = "<group>"; };
+		2C34A29118EED5F00050D735 /* TWIncidentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncidentCell.h; sourceTree = "<group>"; };
+		2C34A29218EED5F00050D735 /* TWIncidentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncidentCell.m; sourceTree = "<group>"; };
+		2C751D4318F2125C00B00C41 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		2CA36F4E18F0DE72000630FC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C34A24F18EE970C0050D735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA36F4F18F0DE72000630FC /* CoreLocation.framework in Frameworks */,
+				2C34A25818EE970C0050D735 /* CoreGraphics.framework in Frameworks */,
+				2C34A25A18EE970C0050D735 /* UIKit.framework in Frameworks */,
+				2C34A25618EE970C0050D735 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C34A27018EE970C0050D735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C34A27518EE970C0050D735 /* XCTest.framework in Frameworks */,
+				2C34A27718EE970C0050D735 /* UIKit.framework in Frameworks */,
+				2C34A27618EE970C0050D735 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C34A24918EE970C0050D735 = {
+			isa = PBXGroup;
+			children = (
+				2C751D4318F2125C00B00C41 /* placeholder.png */,
+				2C34A25B18EE970C0050D735 /* TrafficWatch */,
+				2C34A27A18EE970C0050D735 /* TrafficWatchTests */,
+				2C34A25418EE970C0050D735 /* Frameworks */,
+				2C34A25318EE970C0050D735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C34A25318EE970C0050D735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C34A25218EE970C0050D735 /* TrafficWatch.app */,
+				2C34A27318EE970C0050D735 /* TrafficWatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C34A25418EE970C0050D735 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CA36F4E18F0DE72000630FC /* CoreLocation.framework */,
+				2C34A25518EE970C0050D735 /* Foundation.framework */,
+				2C34A25718EE970C0050D735 /* CoreGraphics.framework */,
+				2C34A25918EE970C0050D735 /* UIKit.framework */,
+				2C34A27418EE970C0050D735 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C34A25B18EE970C0050D735 /* TrafficWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2C34A26418EE970C0050D735 /* TWAppDelegate.h */,
+				2C34A26518EE970C0050D735 /* TWAppDelegate.m */,
+				2C34A26718EE970C0050D735 /* Main.storyboard */,
+				2C34A26A18EE970C0050D735 /* TWViewController.h */,
+				2C34A26B18EE970C0050D735 /* TWViewController.m */,
+				2C34A28A18EE9BFE0050D735 /* TWIncident.h */,
+				2C34A28B18EE9BFE0050D735 /* TWIncident.m */,
+				2C34A28D18EEA7490050D735 /* TWIncidentsParseOperation.h */,
+				2C34A28E18EEA7490050D735 /* TWIncidentsParseOperation.m */,
+				2C34A29018EEBFB70050D735 /* TWIncidentsParserDelegate.h */,
+				2C34A29118EED5F00050D735 /* TWIncidentCell.h */,
+				2C34A29218EED5F00050D735 /* TWIncidentCell.m */,
+				2C34A26D18EE970C0050D735 /* Images.xcassets */,
+				2C34A25C18EE970C0050D735 /* Supporting Files */,
+			);
+			path = TrafficWatch;
+			sourceTree = "<group>";
+		};
+		2C34A25C18EE970C0050D735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C34A25D18EE970C0050D735 /* TrafficWatch-Info.plist */,
+				2C34A25E18EE970C0050D735 /* InfoPlist.strings */,
+				2C34A26118EE970C0050D735 /* main.m */,
+				2C34A26318EE970C0050D735 /* TrafficWatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C34A27A18EE970C0050D735 /* TrafficWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C34A28018EE970C0050D735 /* TrafficWatchTests.m */,
+				2C34A27B18EE970C0050D735 /* Supporting Files */,
+			);
+			path = TrafficWatchTests;
+			sourceTree = "<group>";
+		};
+		2C34A27B18EE970C0050D735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C34A27C18EE970C0050D735 /* TrafficWatchTests-Info.plist */,
+				2C34A27D18EE970C0050D735 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C34A25118EE970C0050D735 /* TrafficWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C34A28418EE970C0050D735 /* Build configuration list for PBXNativeTarget "TrafficWatch" */;
+			buildPhases = (
+				2C34A24E18EE970C0050D735 /* Sources */,
+				2C34A24F18EE970C0050D735 /* Frameworks */,
+				2C34A25018EE970C0050D735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrafficWatch;
+			productName = TrafficWatch;
+			productReference = 2C34A25218EE970C0050D735 /* TrafficWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C34A27218EE970C0050D735 /* TrafficWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C34A28718EE970C0050D735 /* Build configuration list for PBXNativeTarget "TrafficWatchTests" */;
+			buildPhases = (
+				2C34A26F18EE970C0050D735 /* Sources */,
+				2C34A27018EE970C0050D735 /* Frameworks */,
+				2C34A27118EE970C0050D735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C34A27918EE970C0050D735 /* PBXTargetDependency */,
+			);
+			name = TrafficWatchTests;
+			productName = TrafficWatchTests;
+			productReference = 2C34A27318EE970C0050D735 /* TrafficWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C34A24A18EE970C0050D735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Akshit Malhotra";
+				TargetAttributes = {
+					2C34A27218EE970C0050D735 = {
+						TestTargetID = 2C34A25118EE970C0050D735;
+					};
+				};
+			};
+			buildConfigurationList = 2C34A24D18EE970C0050D735 /* Build configuration list for PBXProject "TrafficWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C34A24918EE970C0050D735;
+			productRefGroup = 2C34A25318EE970C0050D735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C34A25118EE970C0050D735 /* TrafficWatch */,
+				2C34A27218EE970C0050D735 /* TrafficWatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C34A25018EE970C0050D735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C34A26E18EE970C0050D735 /* Images.xcassets in Resources */,
+				2C751D4418F2125C00B00C41 /* placeholder.png in Resources */,
+				2C34A26018EE970C0050D735 /* InfoPlist.strings in Resources */,
+				2C34A26918EE970C0050D735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C34A27118EE970C0050D735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C34A27F18EE970C0050D735 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C34A24E18EE970C0050D735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C34A28F18EEA7490050D735 /* TWIncidentsParseOperation.m in Sources */,
+				2C34A28C18EE9BFE0050D735 /* TWIncident.m in Sources */,
+				2C34A29318EED5F00050D735 /* TWIncidentCell.m in Sources */,
+				2C34A26218EE970C0050D735 /* main.m in Sources */,
+				2C34A26618EE970C0050D735 /* TWAppDelegate.m in Sources */,
+				2C34A26C18EE970C0050D735 /* TWViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C34A26F18EE970C0050D735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C34A28118EE970C0050D735 /* TrafficWatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C34A27918EE970C0050D735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C34A25118EE970C0050D735 /* TrafficWatch */;
+			targetProxy = 2C34A27818EE970C0050D735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C34A25E18EE970C0050D735 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C34A25F18EE970C0050D735 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C34A26718EE970C0050D735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C34A26818EE970C0050D735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C34A27D18EE970C0050D735 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C34A27E18EE970C0050D735 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C34A28218EE970C0050D735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C34A28318EE970C0050D735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C34A28518EE970C0050D735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C34A28618EE970C0050D735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2C34A28818EE970C0050D735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrafficWatch.app/TrafficWatch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TrafficWatchTests/TrafficWatchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2C34A28918EE970C0050D735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrafficWatch.app/TrafficWatch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatchTests/TrafficWatchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C34A24D18EE970C0050D735 /* Build configuration list for PBXProject "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C34A28218EE970C0050D735 /* Debug */,
+				2C34A28318EE970C0050D735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C34A28418EE970C0050D735 /* Build configuration list for PBXNativeTarget "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C34A28518EE970C0050D735 /* Debug */,
+				2C34A28618EE970C0050D735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C34A28718EE970C0050D735 /* Build configuration list for PBXNativeTarget "TrafficWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C34A28818EE970C0050D735 /* Debug */,
+				2C34A28918EE970C0050D735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C34A24A18EE970C0050D735 /* Project object */;
+}
